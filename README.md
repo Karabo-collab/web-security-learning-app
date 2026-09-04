@@ -107,6 +107,15 @@ web-application-security-lab/
     ├── register.php
     └── view.php
 
+# Web Application Architecture Reports
+
+- [01 — Lab Environment Setup](Docs/Web-application-architecture/01-lab-environment-setup.md)
+- [02 — Server Components](Docs/Web-application-architecture/02-server-components.md)
+- [03 — Remote Administration with SSH](Docs/Web-application-architecture/03-remote-administration-with-ssh.md)
+- [04 — Application Construction](Docs/Web-application-architecture/04-application-construction.md)
+- [05 — Application Architecture](Docs/Web-application-architecture/05-application-architecture.md)
+- [06 — Security Design](Docs/Web-application-architecture/06-security-design.md)
+
 # OWASP Top 10 testing
 Each vulnerability report contains:
 •	Learning objective
