@@ -28,7 +28,7 @@ This project is a combination of web development, Linux server administration, n
 
 # Scope and Authorisation 
 All security tests documented in this repository were conducted against virtual machines I created for this purpose.
-The lab was isolated in a host-only machine running on virtual box. The secure baseline server was kept and a a clone was used for vulnerability testing. No external websites or third-party infrastructure was targeted.
+The lab was isolated on a VirtualBox Host-Only network. The secure baseline server was preserved and a disposable clone was used for vulnerability testing. No external websites or third-party infrastructure were targeted.
 
 # Lab Architecture
 Windows Testing Environment
@@ -45,7 +45,7 @@ Ubuntu server clone
 |---- PHP application
 |---- SQLite database
 |---- SSH service
-Kali Linux is part of the broader lab plan, but Windows was used for the first broken-access-control exercise because the host computer could not comfortably run both Linux virtual machines simultaneously.
+Kali Linux is part of the broader lab plan, but Windows was used for the Broken Access Control and Authentication Failures exercises because the host computer could not comfortably run both Linux virtual machines simultaneously.
 
 # Technology Stack 
 Component 	        Purpose 
@@ -70,42 +70,31 @@ The application currently supports:
 •	Separating notes by user account.  
 •	Input validation 
 •	Output encoding
-•	Parameterised SOLite queries. 
+•	Parameterised SQLite queries.
+•	Server-side failed-login tracking.
+•	Temporary login-rate limiting.
 
 # Repository Structure
-web-application-security-lab/
-│
+
+```text
+web-security-learning-app/
 ├── README.md
 ├── LICENSE
-│
-├── docs/
-│   ├── web-application-architecture/
-│   │   ├── 01-lab-environment-setup.md
-│   │   ├── 02-server-components.md
-│   │   ├── 03-remote-administration-with-ssh.md
-│   │   ├── 04-application-construction.md
-│   │   ├── 05-application-architecture.md
-│   │   └── 06-security-design.md
-│   │
-│   └── owasp-top-10-testing/
-│       ├── README.md
-│       ├── A01-broken-access-control.md
-│       └── future-testing-reports.md
-│
-├── diagrams/
-│   ├── lab-network-diagram.png
-│   ├── application-architecture.png
-│   └── request-flow.png
-│
-├── evidence/
-│   └── A01-broken-access-control/
-│
-└── secure-example-code/
-    ├── bootstrap.php
-    ├── index.php
-    ├── login.php
-    ├── register.php
-    └── view.php
+└── Docs/
+    ├── Web-application-architecture/
+    │   ├── 01-lab-environment-setup.md
+    │   ├── 02-server-components.md
+    │   ├── 03-remote-administration-with-ssh.md
+    │   ├── 04-application-construction.md
+    │   ├── 05-application-architecture.md
+    │   └── 06-security-design.md
+    └── OWASP-top10 testing/
+        ├── README.md
+        ├── A01-broken-access-control.md
+        ├── A07-identification-and-authentication-failures.md
+        └── evidence/
+            └── a07-authentication-failures/
+```
 
 # Web Application Architecture Reports
 
@@ -130,20 +119,25 @@ Each vulnerability report contains:
 •	Retest results
 •	Lessons learned
 
+- [A01 — Broken Access Control](Docs/OWASP-top10%20testing/A01-broken-access-control.md)
+- [A07 — Identification and Authentication Failures](Docs/OWASP-top10%20testing/A07-identification-and-authentication-failures.md)
+
 # Current Progress
-Area	                                 Status
-Ubuntu Server installation	           Complete
-Apache installation and configuration	 Complete
-PHP application construction	         Complete
-SQLite database setup                  Complete
-SSH remote administration	             Complete
-Registration and authentication	       Complete
-Per-user notes                       	 Complete
-Secure baseline snapshot	             Complete
-Training VM clone	                     Complete
-A01 broken-access-control test	       Complete
-A01 remediation and retest	           Complete
-Additional OWASP testing	             Planned
+
+| Area | Status |
+| --- | --- |
+| Ubuntu Server installation | Complete |
+| Apache installation and configuration | Complete |
+| PHP application construction | Complete |
+| SQLite database setup | Complete |
+| SSH remote administration | Complete |
+| Registration and authentication | Complete |
+| Per-user notes | Complete |
+| Secure baseline snapshot | Complete |
+| Training VM clone | Complete |
+| A01 Broken Access Control test, remediation and retest | Complete |
+| A07 Authentication Failures test, remediation and retest | Complete |
+| Additional OWASP testing | Planned |
 
 # Future Work
 Planned future exercises include:
@@ -151,7 +145,6 @@ Planned future exercises include:
 •	Cryptographic and sensitive-data protection
 •	Injection
 •	Insecure design
-•	Authentication and session failures
 •	Software and data integrity
 •	Security logging and monitoring
 •	Exceptional-condition handling
