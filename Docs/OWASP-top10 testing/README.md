@@ -14,6 +14,7 @@ Each exercise follows the same learning cycle:
 ## Completed reports
 
 - [A01 — Broken Access Control](A01-broken-access-control.md) — Complete
+- [A05 — Injection](A05-injection.md) — Complete
 - [A07 — Identification and Authentication Failures](A07-identification-and-authentication-failures.md) — Complete
 
 ## Scope and ethics
