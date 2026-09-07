@@ -95,10 +95,12 @@ web-security-learning-app/
         ├── A02-security-misconfiguration.md
         ├── A05-injection.md
         ├── A07-identification-and-authentication-failures.md
+        ├── A09-security-logging-and-alerting-failures.md
         └── evidence/
             ├── a02-security-misconfiguration/
             ├── a05-injection/
-            └── a07-authentication-failures/
+            ├── a07-authentication-failures/
+            └── a09-security-logging/
 ```
 
 # Web Application Architecture Reports
@@ -128,6 +130,7 @@ Each vulnerability report contains:
 - [A02 — Security Misconfiguration](Docs/OWASP-top10%20testing/A02-security-misconfiguration.md)
 - [A05 — Injection](Docs/OWASP-top10%20testing/A05-injection.md)
 - [A07 — Identification and Authentication Failures](Docs/OWASP-top10%20testing/A07-identification-and-authentication-failures.md)
+- [A09 — Security Logging and Alerting Failures](Docs/OWASP-top10%20testing/A09-security-logging-and-alerting-failures.md)
 
 # Current Progress
 
@@ -146,6 +149,7 @@ Each vulnerability report contains:
 | A02 Security Misconfiguration test, remediation and retest | Complete |
 | A05 Injection test, remediation and retest | Complete |
 | A07 Authentication Failures test, remediation and retest | Complete |
+| A09 Security Logging implementation and validation | Complete |
 | Additional OWASP testing | Planned |
 
 # Future Work
@@ -153,7 +157,7 @@ Planned future exercises include:
 •	Cryptographic and sensitive-data protection
 •	Insecure design
 •	Software and data integrity
-•	Security logging and monitoring
+•	Security alerting and expanded monitoring
 •	Exceptional-condition handling
 The application and documentation will continue to develop as each controlled exercise is completed.
 
