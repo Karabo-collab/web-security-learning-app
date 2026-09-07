@@ -92,9 +92,11 @@ web-security-learning-app/
     └── OWASP-top10 testing/
         ├── README.md
         ├── A01-broken-access-control.md
+        ├── A02-security-misconfiguration.md
         ├── A05-injection.md
         ├── A07-identification-and-authentication-failures.md
         └── evidence/
+            ├── a02-security-misconfiguration/
             ├── a05-injection/
             └── a07-authentication-failures/
 ```
@@ -123,6 +125,7 @@ Each vulnerability report contains:
 •	Lessons learned
 
 - [A01 — Broken Access Control](Docs/OWASP-top10%20testing/A01-broken-access-control.md)
+- [A02 — Security Misconfiguration](Docs/OWASP-top10%20testing/A02-security-misconfiguration.md)
 - [A05 — Injection](Docs/OWASP-top10%20testing/A05-injection.md)
 - [A07 — Identification and Authentication Failures](Docs/OWASP-top10%20testing/A07-identification-and-authentication-failures.md)
 
@@ -140,13 +143,13 @@ Each vulnerability report contains:
 | Secure baseline snapshot | Complete |
 | Training VM clone | Complete |
 | A01 Broken Access Control test, remediation and retest | Complete |
+| A02 Security Misconfiguration test, remediation and retest | Complete |
 | A05 Injection test, remediation and retest | Complete |
 | A07 Authentication Failures test, remediation and retest | Complete |
 | Additional OWASP testing | Planned |
 
 # Future Work
 Planned future exercises include:
-•	Security misconfiguration
 •	Cryptographic and sensitive-data protection
 •	Insecure design
 •	Software and data integrity
