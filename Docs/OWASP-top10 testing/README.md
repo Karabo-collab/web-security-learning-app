@@ -15,6 +15,7 @@ Each exercise follows the same learning cycle:
 
 - [A01 — Broken Access Control](A01-broken-access-control.md) — Complete
 - [A02 — Security Misconfiguration](A02-security-misconfiguration.md) — Complete
+- [A04 — Cryptographic Failures](A04-cryptographic-failures.md) — Complete
 - [A05 — Injection](A05-injection.md) — Complete
 - [A07 — Identification and Authentication Failures](A07-identification-and-authentication-failures.md) — Complete
 - [A09 — Security Logging and Alerting Failures](A09-security-logging-and-alerting-failures.md) — Complete

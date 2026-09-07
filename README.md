@@ -93,11 +93,13 @@ web-security-learning-app/
         ├── README.md
         ├── A01-broken-access-control.md
         ├── A02-security-misconfiguration.md
+        ├── A04-cryptographic-failures.md
         ├── A05-injection.md
         ├── A07-identification-and-authentication-failures.md
         ├── A09-security-logging-and-alerting-failures.md
         └── evidence/
             ├── a02-security-misconfiguration/
+            ├── a04-cryptographic-failures/
             ├── a05-injection/
             ├── a07-authentication-failures/
             └── a09-security-logging/
@@ -128,6 +130,7 @@ Each vulnerability report contains:
 
 - [A01 — Broken Access Control](Docs/OWASP-top10%20testing/A01-broken-access-control.md)
 - [A02 — Security Misconfiguration](Docs/OWASP-top10%20testing/A02-security-misconfiguration.md)
+- [A04 — Cryptographic Failures](Docs/OWASP-top10%20testing/A04-cryptographic-failures.md)
 - [A05 — Injection](Docs/OWASP-top10%20testing/A05-injection.md)
 - [A07 — Identification and Authentication Failures](Docs/OWASP-top10%20testing/A07-identification-and-authentication-failures.md)
 - [A09 — Security Logging and Alerting Failures](Docs/OWASP-top10%20testing/A09-security-logging-and-alerting-failures.md)
@@ -147,6 +150,7 @@ Each vulnerability report contains:
 | Training VM clone | Complete |
 | A01 Broken Access Control test, remediation and retest | Complete |
 | A02 Security Misconfiguration test, remediation and retest | Complete |
+| A04 Cryptographic Failures HTTPS and secure-session exercise | Complete |
 | A05 Injection test, remediation and retest | Complete |
 | A07 Authentication Failures test, remediation and retest | Complete |
 | A09 Security Logging implementation and validation | Complete |
@@ -154,7 +158,7 @@ Each vulnerability report contains:
 
 # Future Work
 Planned future exercises include:
-•	Cryptographic and sensitive-data protection
+•	Expanded cryptographic and stored-data protection testing
 •	Insecure design
 •	Software and data integrity
 •	Security alerting and expanded monitoring
