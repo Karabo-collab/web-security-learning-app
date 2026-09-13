@@ -74,6 +74,8 @@ The application currently supports:
 •	Searching notes.
 •	Server-side failed-login tracking.
 •	Temporary login-rate limiting.
+•	User and administrator roles.
+•	Server-side administrator guard and account-list dashboard.
 
 # Repository Structure
 
@@ -93,14 +95,18 @@ web-security-learning-app/
         ├── README.md
         ├── A01-broken-access-control.md
         ├── A02-security-misconfiguration.md
+        ├── A03-software-supply-chain-failures.md
         ├── A04-cryptographic-failures.md
         ├── A05-injection.md
+        ├── A06-insecure-design.md
         ├── A07-identification-and-authentication-failures.md
         ├── A09-security-logging-and-alerting-failures.md
         └── evidence/
             ├── a02-security-misconfiguration/
+            ├── a03-software-supply-chain-failures/
             ├── a04-cryptographic-failures/
             ├── a05-injection/
+            ├── a06-insecure-design/
             ├── a07-authentication-failures/
             └── a09-security-logging/
 ```
@@ -130,10 +136,14 @@ Each vulnerability report contains:
 
 - [A01 — Broken Access Control](Docs/OWASP-top10%20testing/A01-broken-access-control.md)
 - [A02 — Security Misconfiguration](Docs/OWASP-top10%20testing/A02-security-misconfiguration.md)
+- [A03 — Software Supply Chain Failures](Docs/OWASP-top10%20testing/A03-software-supply-chain-failures.md)
 - [A04 — Cryptographic Failures](Docs/OWASP-top10%20testing/A04-cryptographic-failures.md)
 - [A05 — Injection](Docs/OWASP-top10%20testing/A05-injection.md)
+- [A06 — Insecure Design](Docs/OWASP-top10%20testing/A06-insecure-design.md)
 - [A07 — Identification and Authentication Failures](Docs/OWASP-top10%20testing/A07-identification-and-authentication-failures.md)
 - [A09 — Security Logging and Alerting Failures](Docs/OWASP-top10%20testing/A09-security-logging-and-alerting-failures.md)
+
+A03 documents component inventory and package maintenance rather than a reproduced compromise. A06 documents role design and a controlled administrator-authorization failure. A04 and A09 cover their recorded hardening and logging-validation workflows. Each report states its evidence limits.
 
 # Current Progress
 
@@ -150,8 +160,10 @@ Each vulnerability report contains:
 | Training VM clone | Complete |
 | A01 Broken Access Control test, remediation and retest | Complete |
 | A02 Security Misconfiguration test, remediation and retest | Complete |
+| A03 Software Supply Chain inventory and maintenance exercise | Complete; screenshot limitations documented |
 | A04 Cryptographic Failures HTTPS and secure-session exercise | Complete |
 | A05 Injection test, remediation and retest | Complete |
+| A06 Role design, administrator authorization and retest | Complete |
 | A07 Authentication Failures test, remediation and retest | Complete |
 | A09 Security Logging implementation and validation | Complete |
 | Additional OWASP testing | Planned |
@@ -159,7 +171,6 @@ Each vulnerability report contains:
 # Future Work
 Planned future exercises include:
 •	Expanded cryptographic and stored-data protection testing
-•	Insecure design
 •	Software and data integrity
 •	Security alerting and expanded monitoring
 •	Exceptional-condition handling
