@@ -100,6 +100,7 @@ web-security-learning-app/
         ├── A05-injection.md
         ├── A06-insecure-design.md
         ├── A07-identification-and-authentication-failures.md
+        ├── A08-software-or-data-integrity-failures.md
         ├── A09-security-logging-and-alerting-failures.md
         └── evidence/
             ├── a02-security-misconfiguration/
@@ -108,6 +109,7 @@ web-security-learning-app/
             ├── a05-injection/
             ├── a06-insecure-design/
             ├── a07-authentication-failures/
+            ├── a08-software-or-data-integrity-failures/
             └── a09-security-logging/
 ```
 
@@ -141,6 +143,7 @@ Each vulnerability report contains:
 - [A05 — Injection](Docs/OWASP-top10%20testing/A05-injection.md)
 - [A06 — Insecure Design](Docs/OWASP-top10%20testing/A06-insecure-design.md)
 - [A07 — Identification and Authentication Failures](Docs/OWASP-top10%20testing/A07-identification-and-authentication-failures.md)
+- [A08 — Software or Data Integrity Failures](Docs/OWASP-top10%20testing/A08-software-or-data-integrity-failures.md)
 - [A09 — Security Logging and Alerting Failures](Docs/OWASP-top10%20testing/A09-security-logging-and-alerting-failures.md)
 
 A03 documents component inventory and package maintenance rather than a reproduced compromise. A06 documents role design and a controlled administrator-authorization failure. A04 and A09 cover their recorded hardening and logging-validation workflows. Each report states its evidence limits.
@@ -165,13 +168,13 @@ A03 documents component inventory and package maintenance rather than a reproduc
 | A05 Injection test, remediation and retest | Complete |
 | A06 Role design, administrator authorization and retest | Complete |
 | A07 Authentication Failures test, remediation and retest | Complete |
+| A08 Software or Data Integrity test, restoration and retest | Complete |
 | A09 Security Logging implementation and validation | Complete |
 | Additional OWASP testing | Planned |
 
 # Future Work
 Planned future exercises include:
 •	Expanded cryptographic and stored-data protection testing
-•	Software and data integrity
 •	Security alerting and expanded monitoring
 •	Exceptional-condition handling
 The application and documentation will continue to develop as each controlled exercise is completed.

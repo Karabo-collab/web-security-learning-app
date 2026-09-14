@@ -22,6 +22,7 @@ A03 follows an inventory and trusted-package maintenance workflow. A04 follows H
 - [A05 — Injection](A05-injection.md) — Complete
 - [A06 — Insecure Design](A06-insecure-design.md) — Role design, controlled authorization failure and retest complete
 - [A07 — Identification and Authentication Failures](A07-identification-and-authentication-failures.md) — Complete
+- [A08 — Software or Data Integrity Failures](A08-software-or-data-integrity-failures.md) — Complete
 - [A09 — Security Logging and Alerting Failures](A09-security-logging-and-alerting-failures.md) — Complete
 
 ## Scope and ethics
