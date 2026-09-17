@@ -11,7 +11,7 @@ Controlled vulnerability exercises use the following learning cycle:
 5. Repair the weakness.
 6. Retest to confirm that the repair works.
 
-A03 follows an inventory and trusted-package maintenance workflow. A04 follows HTTPS and session hardening, and A09 implements and validates protected logging. These reports do not claim that a deliberate compromise was reproduced. A06 combines role design with a controlled missing-authorization test; its report explains the overlap with A01.
+A03 follows an inventory and trusted-package maintenance workflow. A04 follows HTTPS and session hardening, A09 implements and validates protected logging, and A10 validates centralized exception handling. These reports do not claim that a deliberate compromise was reproduced. A06 combines role design with a controlled missing-authorization test; its report explains the overlap with A01.
 
 ## Completed reports
 
@@ -24,6 +24,11 @@ A03 follows an inventory and trusted-package maintenance workflow. A04 follows H
 - [A07 — Identification and Authentication Failures](A07-identification-and-authentication-failures.md) — Complete
 - [A08 — Software or Data Integrity Failures](A08-software-or-data-integrity-failures.md) — Complete
 - [A09 — Security Logging and Alerting Failures](A09-security-logging-and-alerting-failures.md) — Complete
+- [A10 — Mishandling of Exceptional Conditions](A10-mishandling-of-exceptional-conditions.md) — Complete
+
+## Supplemental exercises
+
+- [Server-Side Request Forgery](Supplemental-SSRF.md) — Controlled reproduction and remediation complete. This is outside the numbered 2025 report set because SSRF was A10 in the 2021 edition.
 
 ## Scope and ethics
 
@@ -31,4 +36,4 @@ All testing is limited to systems and accounts that I own and control. Deliberat
 
 ## Planned work
 
-A08 — Software or Data Integrity Failures and A10 — Mishandling of Exceptional Conditions remain planned. Additional validation beyond the documented scope is identified within each completed report.
+Additional validation beyond the documented scope is identified within each completed report. Future exercises will extend the application without changing the classification or evidence of the completed work.

@@ -102,6 +102,8 @@ web-security-learning-app/
         ├── A07-identification-and-authentication-failures.md
         ├── A08-software-or-data-integrity-failures.md
         ├── A09-security-logging-and-alerting-failures.md
+        ├── A10-mishandling-of-exceptional-conditions.md
+        ├── Supplemental-SSRF.md
         └── evidence/
             ├── a02-security-misconfiguration/
             ├── a03-software-supply-chain-failures/
@@ -110,7 +112,9 @@ web-security-learning-app/
             ├── a06-insecure-design/
             ├── a07-authentication-failures/
             ├── a08-software-or-data-integrity-failures/
-            └── a09-security-logging/
+            ├── a09-security-logging/
+            ├── a10-mishandling-of-exceptional-conditions/
+            └── supplemental-ssrf/
 ```
 
 # Web Application Architecture Reports
@@ -145,6 +149,11 @@ Each vulnerability report contains:
 - [A07 — Identification and Authentication Failures](Docs/OWASP-top10%20testing/A07-identification-and-authentication-failures.md)
 - [A08 — Software or Data Integrity Failures](Docs/OWASP-top10%20testing/A08-software-or-data-integrity-failures.md)
 - [A09 — Security Logging and Alerting Failures](Docs/OWASP-top10%20testing/A09-security-logging-and-alerting-failures.md)
+- [A10 — Mishandling of Exceptional Conditions](Docs/OWASP-top10%20testing/A10-mishandling-of-exceptional-conditions.md)
+
+Supplemental exercise:
+
+- [Server-Side Request Forgery](Docs/OWASP-top10%20testing/Supplemental-SSRF.md) — documented separately because SSRF was A10 in the 2021 edition, not the 2025 report set used above.
 
 A03 documents component inventory and package maintenance rather than a reproduced compromise. A06 documents role design and a controlled administrator-authorization failure. A04 and A09 cover their recorded hardening and logging-validation workflows. Each report states its evidence limits.
 
@@ -170,13 +179,15 @@ A03 documents component inventory and package maintenance rather than a reproduc
 | A07 Authentication Failures test, remediation and retest | Complete |
 | A08 Software or Data Integrity test, restoration and retest | Complete |
 | A09 Security Logging implementation and validation | Complete |
-| Additional OWASP testing | Planned |
+| A10 Exceptional Conditions implementation and validation | Complete |
+| Supplemental SSRF test, remediation and evidence review | Complete |
+| Additional security testing | Planned |
 
 # Future Work
 Planned future exercises include:
 •	Expanded cryptographic and stored-data protection testing
 •	Security alerting and expanded monitoring
-•	Exceptional-condition handling
+•	Additional exceptional-condition and dependency-failure scenarios
 The application and documentation will continue to develop as each controlled exercise is completed.
 
 # Security Notice
